@@ -25,10 +25,30 @@ public class KeyboardSpawner: MonoBehaviour {
 
         return newObject;
     }
-
-    private void Update() {
-        if (Input.GetKeyDown(keyToPress)) {
+    private void Update()
+    {
+        if (Input.GetKeyDown(keyToPress))
+        {
             spawnObject();
         }
     }
+
+    /**
+    void Start()
+    {
+        this.StartCoroutine(SpawnRoutine());
+    }
+
+    private IEnumerator SpawnRoutine()
+    {
+        while (true)
+        {
+            if (Input.GetKeyDown(keyToPress))
+            {
+                spawnObject();
+                yield return new WaitForSeconds(1f);
+            }
+        }
+    }
+    **/
 }

@@ -9,7 +9,7 @@ public class ShieldThePlayer : MonoBehaviour {
         if (other.tag == "Player") {
             Debug.Log("Shield triggered by player");
             var destroyComponent = other.GetComponent<DestroyOnTrigger2D>();
-            if (destroyComponent) {
+            if (destroyComponent.enabled) {
                 destroyComponent.StartCoroutine(ShieldTemporarily(destroyComponent));
                 // NOTE: If you just call "StartCoroutine", then it will not work, 
                 //       since the present object is destroyed!
@@ -19,10 +19,12 @@ public class ShieldThePlayer : MonoBehaviour {
             Debug.Log("Shield triggered by "+other.name);
         }
     }
+
     private IEnumerator ShieldTemporarily(DestroyOnTrigger2D destroyComponent) {
         destroyComponent.enabled = false;
         for (float i = duration; i > 0; i--) {
             Debug.Log("Shield: " + i + " seconds remaining!");
+            destroyComponent.enabled = false; // if the player will take another Shield it will work for new 5 sec counter
             yield return new WaitForSeconds(1);
         }
         Debug.Log("Shield gone!");

@@ -7,11 +7,11 @@ using UnityEngine;
  */
 public class HealthSystem : MonoBehaviour
 {
-    [SerializeField] int lives = 3;
+    [SerializeField] public int lives = 3;
 
     public void Damage() {
         --lives;
-        gameObject.transform.localScale *= 0.75f; // Notify the player that a damage was done
+        gameObject.transform.localScale *= 0.8f; // Notify the player that a damage was done
         if (lives<1) {
             Destroy(this.gameObject);
         }
