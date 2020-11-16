@@ -293,12 +293,12 @@ PrefabInstance:
     - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: minTimeBetweenSpawns
-      value: 0.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: maxTimeBetweenSpawns
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
@@ -410,12 +410,12 @@ PrefabInstance:
     - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: minTimeBetweenSpawns
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: maxTimeBetweenSpawns
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
@@ -553,12 +553,12 @@ PrefabInstance:
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 31.3
+      value: 24.1
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 22
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
@@ -630,6 +630,22 @@ PrefabInstance:
       propertyPath: velocityOfSpawnedObject.x
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
+        type: 3}
+      propertyPath: prefabToSpawn
+      value: 
+      objectReference: {fileID: 9126422574862513738, guid: 65f1ad4f24887c6418baf4c252279863,
+        type: 3}
+    - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
+        type: 3}
+      propertyPath: minTimeBetweenSpawns
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
+        type: 3}
+      propertyPath: maxTimeBetweenSpawns
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76dd5d4eb2061104b9a72b003c24ce25, type: 3}
 --- !u!4 &750246238 stripped
@@ -648,12 +664,12 @@ PrefabInstance:
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -41.4
+      value: -30.3
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 23.8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
@@ -714,7 +730,7 @@ PrefabInstance:
         type: 3}
       propertyPath: prefabToSpawn
       value: 
-      objectReference: {fileID: 7837289214103786378, guid: a7ec4b5ecf42bb349a8c73c3aa2f2739,
+      objectReference: {fileID: 9126422574862513738, guid: 65f1ad4f24887c6418baf4c252279863,
         type: 3}
     - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
@@ -730,6 +746,16 @@ PrefabInstance:
         type: 3}
       propertyPath: maxYDistance
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
+        type: 3}
+      propertyPath: minTimeBetweenSpawns
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
+        type: 3}
+      propertyPath: maxTimeBetweenSpawns
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76dd5d4eb2061104b9a72b003c24ce25, type: 3}
@@ -1808,6 +1834,16 @@ PrefabInstance:
         type: 3}
       propertyPath: maxYDistance
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
+        type: 3}
+      propertyPath: minTimeBetweenSpawns
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392271928695271266, guid: 76dd5d4eb2061104b9a72b003c24ce25,
+        type: 3}
+      propertyPath: maxTimeBetweenSpawns
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76dd5d4eb2061104b9a72b003c24ce25, type: 3}
