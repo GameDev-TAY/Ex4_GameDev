@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Chaser : MonoBehaviour
 {
+    float rotSpeed = 90f;
     Transform Player;
 
     // Update is called once per frame
@@ -21,6 +22,10 @@ public class Chaser : MonoBehaviour
         Vector3 dir = Player.position - transform.position;
         dir.Normalize();
 
-        float zAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90;
+        float zAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+
+        Quaternion desierdRot = Quaternion.Euler(0, 0, zAngle);
+
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, desierdRot, rotSpeed * Time.deltaTime);
     }
 }
