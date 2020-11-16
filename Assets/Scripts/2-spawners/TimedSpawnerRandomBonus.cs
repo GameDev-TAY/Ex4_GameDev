@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TimedSpawnerRandomShield : MonoBehaviour
+public class TimedSpawnerRandomBonus : MonoBehaviour
 {
     [SerializeField] GameObject prefabToSpawn;
     [Tooltip("Minimum time between consecutive spawns, in seconds")] [SerializeField] float minTimeBetweenSpawns = 20f;
