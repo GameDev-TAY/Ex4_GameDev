@@ -19,10 +19,10 @@ public class Mover: MonoBehaviour {
     void Update() {
         transform.position += velocity * Time.deltaTime;
         Vector3 pos = transform.position;
-        if (transform.position.x >= screenBounds.x + extra ||
-            transform.position.x <= -screenBounds.x - extra ||
-            transform.position.y >= screenBounds.y + extra || 
-            transform.position.y <= -screenBounds.y - extra)
+        if (pos.x >= screenBounds.x + extra ||
+            pos.x <= -screenBounds.x - extra ||
+            pos.y >= screenBounds.y + extra ||
+            pos.y <= -screenBounds.y - extra)
         {
             Destroy(gameObject);
         }
