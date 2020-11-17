@@ -55,5 +55,17 @@ The red arrow indicates the heart:
 
 ![image](https://user-images.githubusercontent.com/57855070/99462228-e3683a00-293b-11eb-82df-2c43aba38128.png)
 
+4.Our original change was to create enemies of a different kind from the enemies that exist now, these enemies are chasing our player and trying to dismantle him. Each touch on the enemy lowers him one hit point.
+
+Code change reference:
+https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Enemies/EnemyChaser.prefab
+
+The red arrow indicates the new enemies:
+
+![image](https://user-images.githubusercontent.com/57855070/99462975-7bb2ee80-293d-11eb-9331-97254adc1d55.png)
+
+
+
+
 
 
