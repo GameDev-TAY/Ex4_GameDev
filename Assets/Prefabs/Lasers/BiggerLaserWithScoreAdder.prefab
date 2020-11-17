@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: {x: 0, y: 0, z: 0}
+  extra: 0
 --- !u!70 &4744788480726473310
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

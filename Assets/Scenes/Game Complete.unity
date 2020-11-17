@@ -233,12 +233,12 @@ PrefabInstance:
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -36.5
+      value: -35.4
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.6
+      value: 9.8
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
@@ -1249,11 +1249,11 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &1363711266115910
 MonoBehaviour:
@@ -1284,7 +1284,7 @@ MonoBehaviour:
   keyToPress: 32
   prefabToSpawn: {fileID: 206225842732292031, guid: 1064f1e6fd4430a48ae8a63513c527b4,
     type: 3}
-  velocityOfSpawnedObject: {x: 0, y: 10, z: 0}
+  velocityOfSpawnedObject: {x: 0, y: 12, z: 0}
   scoreField: {fileID: 1811610590}
 --- !u!114 &1363711266115912
 MonoBehaviour:
@@ -1314,7 +1314,7 @@ MonoBehaviour:
   keyToPress: 32
   prefabToSpawn: {fileID: 2204313089968469206, guid: f8de81ce04d916c43a25b8a51a68c8c3,
     type: 3}
-  velocityOfSpawnedObject: {x: 0, y: 15, z: 0}
+  velocityOfSpawnedObject: {x: 0, y: 17, z: 0}
   scoreField: {fileID: 1811610590}
 --- !u!114 &1363711266115914
 MonoBehaviour:
@@ -1757,12 +1757,12 @@ PrefabInstance:
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.06
+      value: -2.9
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.51
+      value: 15.9
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}

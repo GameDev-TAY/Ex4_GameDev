@@ -13,7 +13,7 @@ public class KeyboardSpawner: MonoBehaviour {
 
     protected virtual GameObject spawnObject() {
         // Step 1: spawn the new object.
-        Vector3 positionOfSpawnedObject = transform.position;  // span at the containing object position.
+        Vector3 positionOfSpawnedObject = transform.position + new Vector3(0, 1f, 0);  // span at the containing object position.
         Quaternion rotationOfSpawnedObject = Quaternion.identity;  // no rotation.
         GameObject newObject = Instantiate(prefabToSpawn, positionOfSpawnedObject, rotationOfSpawnedObject);
 

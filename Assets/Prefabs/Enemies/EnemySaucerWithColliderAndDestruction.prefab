@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: {x: 0, y: -4, z: 0}
+  extra: 5
 --- !u!60 &3928880668046269437
 PolygonCollider2D:
   m_ObjectHideFlags: 0
