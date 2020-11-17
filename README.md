@@ -79,7 +79,7 @@ The red arrow indicates the wall:
 
 2.A flat world with invisible borders means that when the enemies pass the bottom of the screen, they are destroyed and when the laser crosses the top of the screen - it is destroyed.
 
-3. Round World - When the player reaches one side of the world, he appears on the other side.
+3.Round World - When the player reaches one side of the world, he appears on the other side.
 
 #### Third section:
 
