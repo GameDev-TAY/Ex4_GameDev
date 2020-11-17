@@ -7,7 +7,7 @@ using UnityEngine;
  */
 public class HealthSystem : MonoBehaviour
 {
-    [SerializeField] public int lives = 3;
+    [Tooltip("Number of lives")] [SerializeField] public int lives = 3;
 
     public void Damage() {
         --lives;

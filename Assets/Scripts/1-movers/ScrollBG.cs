@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class ScrollBG : MonoBehaviour
 {
-    [SerializeField] float speed = 0.1f;
-
+    [Tooltip("Movement of star material in meters per second")] [SerializeField] float speed = 0.1f;
+    
+    // move the stars by changing the offset of the texture material.
     // Update is called once per frame
     void Update()
     {
