@@ -81,7 +81,7 @@ The red arrow indicates the wall:
 
 3. Round World - When the player reaches one side of the world, he appears on the other side.
 
-Third section:
+#### Third section:
 
 
 
