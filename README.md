@@ -64,6 +64,25 @@ The red arrow indicates the new enemies:
 
 ![image](https://user-images.githubusercontent.com/57855070/99462975-7bb2ee80-293d-11eb-9331-97254adc1d55.png)
 
+#### Second section:
+In this section we were asked to add 3 different borderies to our game.
+1. The first border is a flat world with visible borders, such as impassable walls.
+We added walls in a random position and at a random time on the screen so that the player can not go through them just like a regular wall.
+
+Code change reference:
+https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/Boundaries/SpawnRandomWalls.cs
+
+The red arrow indicates the wall:
+
+![image](https://user-images.githubusercontent.com/57855070/99463531-a782a400-293e-11eb-9f3a-35308894289b.png)
+
+
+2.A flat world with invisible borders means that when the enemies pass the bottom of the screen, they are destroyed and when the laser crosses the top of the screen - it is destroyed.
+
+3. Round World - When the player reaches one side of the world, he appears on the other side.
+
+Third section:
+
 
 
 
