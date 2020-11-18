@@ -21,17 +21,17 @@ Before we start detailing we wanted to show you what the game looks like:
 
 **Code reference:**
 
-> https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Bonuses/Shield.prefab
-> https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Spawners/ShieldSpawner.prefab <br />
-> The TimedSpawnerRandomBonus script is accepted as parameters:
-> 1. object for spawning 
-> 2. Time range for spawning
-> 3. Gets the boundaries from the camera
-> And spawns the object at a random time and position on the screen. <br />
+> * https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Bonuses/Shield.prefab <br />
+> *  https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Spawners/ShieldSpawner.prefab <br />
+> * The TimedSpawnerRandomBonus script is accepted as parameters: <br />
+     1. object for spawning <br />
+     2. Time range for spawning <br />
+     3. Gets the boundaries from the camera <br />
+  And spawns the object at a random time and position on the screen. <br />
 > https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/2-spawners/TimedSpawnerRandomBonus.cs <br />
-> The ShieldActivate script is in the player and the role of the script is to detect that the player has collided with a Shield object and then add the element of the fading  circle over time <br />
+> * The ShieldActivate script is in the player and the role of the script is to detect that the player has collided with a Shield object and then add the element of the fading  circle over time <br />
 > https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/3-collisions/ShieldActivate.cs <br />
-> In the ShieldThePlayer script the trigger of the colliders is activated as soon as it recognizes that the player has touched it then it activates the shield <br />
+> * In the ShieldThePlayer script the trigger of the colliders is activated as soon as it recognizes that the player has touched it then it activates the shield <br />
 > https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/3-collisions/ShieldThePlayer.cs <br />
 
 The red arrow indicates the shield:
@@ -47,20 +47,16 @@ The difference between a regular laser and a powerful laser is that the stronger
 
 **Code reference:**
 
-Same as the Shield
-https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/2-spawners/TimedSpawnerRandomBonus.cs
-
-
-https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Bonuses/Cannon.prefab
-https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Spawners/CannonSpawner.prefab
-
-the BigLaserShooter and the LaserShooter is components of the player.
-https://github.com/GameDev-TAY/Ex4_GameDev/tree/main/Assets/Prefabs/Lasers
-
-The CannonThePlayer script is located at the cannon object.
-The role of the script is after an identification is made that the player has collected it and then he neutralizes the regular laser and then activates the more powerful laser(BigLaserShooter) for a set time.
-https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/2-spawners/BigLaserShooter.cs
-https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/3-collisions/CannonThePlayer.cs
+> * Same as the Shield <br />
+> https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/2-spawners/TimedSpawnerRandomBonus.cs <br />
+> * https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Bonuses/Cannon.prefab <br />
+> * https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Spawners/CannonSpawner.prefab <br />
+> * The BigLaserShooter and the LaserShooter is components of the player. <br />
+>   https://github.com/GameDev-TAY/Ex4_GameDev/tree/main/Assets/Prefabs/Lasers <br />
+> * The CannonThePlayer script is located at the cannon object. <br />
+> The role of the script is after an identification is made that the player has collected it and then he neutralizes the regular laser and then activates the more powerful  laser(BigLaserShooter) for a set time.
+> https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/2-spawners/BigLaserShooter.cs <br />
+> https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/3-collisions/CannonThePlayer.cs <br />
 
 The red arrow indicates the cannon:
 
@@ -75,22 +71,18 @@ In addition we have added that it will be possible to collect "life" during the 
 
 **Code reference:**
 
-Same as the Shield
-https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/2-spawners/TimedSpawnerRandomBonus.cs
-
-The HealthSystem component is in the player.
-It takes as a parameter the number of lives the player currently has.
-Also the damge function is in it and is responsible for lowering the life of the player and reducing the player.
-And if necessary also its destruction if it is disqualified.
-
-https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/3-collisions/HealthSystem.cs
-
-Within the Health prefab there is a script called AddHealth whose roll is to add life to the player when the Health type objects recognize connection 
-with the player This script increases the life of the player and increases his character. This only happens when the player's life is less than 3.
-https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Bonuses/Health.prefab
-https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/3-collisions/AddHealth.cs
-
-https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Spawners/HealthSpawner.prefab
+> * Same as the Shield <br />
+>   https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/2-spawners/TimedSpawnerRandomBonus.cs <br />
+> * The HealthSystem component is in the player. <br />
+> It takes as a parameter the number of lives the player currently has.
+> Also the damge function is in it and is responsible for lowering the life of the player and reducing the player.
+> And if necessary also its destruction if it is disqualified.
+> https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/3-collisions/HealthSystem.cs <br />
+> * Within the Health prefab there is a script called AddHealth whose roll is to add life to the player when the Health type objects recognize connection 
+with the player This script increases the life of the player and increases his character. This only happens when the player's life is less than 3. <br />
+https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Bonuses/Health.prefab <br /> 
+https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/3-collisions/AddHealth.cs <br />
+> * https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Spawners/HealthSpawner.prefab <br />
 
 
 The red arrow indicates the heart:
@@ -99,16 +91,14 @@ The red arrow indicates the heart:
 
 4.Our original change was to create enemies of a different kind from the enemies that exist now, these enemies are chasing our player and trying to dismantle him. Each touch on the enemy lowers is life him one hit point.
 
-**Code reference:**
-
-The script is in the object chaserץ
+**Code reference:** <br />
+> * The script is in the object chaser.
 The chaser's script is responsible for aiming the enemy's face to direct the player at a constant and changeable rotational speed that is obtained as a parameter.
-In addition the role of the script is to move the enemy chasing the player at a movement speed that is accepted as a format.
-https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Enemies/EnemyChaser.prefab
-https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/1-movers/Chaser.cs
-
-The enemy is as happy as the other enemies below code:
-https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/2-spawners/TimedSpawnerRandom.cs
+In addition the role of the script is to move the enemy chasing the player at a movement speed that is accepted as a format. <br />
+https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Enemies/EnemyChaser.prefab <br />
+https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/1-movers/Chaser.cs <br />
+> * The enemy is as happy as the other enemies below code: <br />
+    https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/2-spawners/TimedSpawnerRandom.cs <br />
 
 The red arrow indicates the new enemies:
 
@@ -120,9 +110,8 @@ In this section we were asked to add 3 different borderies to our game.
 We added walls in a random position and at a random time on the screen so that the player can not go through them just like a regular wall.
 In order for the player movement to really be like in the real world we defined the rigid body component as dynamic and for the collisions to happen correctly all the triggers in the Collider component were activated in the other objects, the trigger in the player in the Collider component was not enable.
 
-**Code reference:**
-
-https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/Boundaries/SpawnRandomWalls.cs
+**Code reference:** <br />
+> * https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/Boundaries/SpawnRandomWalls.cs <br />
 
 The red arrow indicates the wall:
 
@@ -136,9 +125,8 @@ The reason we added extra to the range is because we wanted the Spawning that ar
 But on the other hand we wanted that when objects come out of the cemera limit will be destroyed.
 To illustrate if the spawns are in the area of the black square we caused objects to be destroyed in the blue line.
 
-**Code reference:**
-
-https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/1-movers/Mover.cs
+**Code reference:** <br />
+> * https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/1-movers/Mover.cs <br />
 
 ![image](https://user-images.githubusercontent.com/57855070/99498891-c7d35280-2980-11eb-855c-8162a0afae45.png)
 
@@ -147,9 +135,8 @@ We created this effect by exiting from one side and back from the other side in 
 In order for the animation to work in a subdivision manner we moved the spaceship only when it was completely out of the camera realm.
 We did this by accepting the boundaries of the spaceship and adding them to the position calculation.
 
-**Code reference:**
-
-https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/Boundaries/ScreenWrap.cs
+**Code reference:** <br />
+> * https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/Boundaries/ScreenWrap.cs <br />
 
 You can play the game here:
 
@@ -158,9 +145,10 @@ https://gamedev-tay.itch.io/spaceship
 #### background:
 We created a new material that uses a star image whose warp mode is in repeat and then we defined its shader as transparent and then we created a background object whose element is the material and then we added the ScrollBG script whose job is to change the offset of its material. We created two background objects and placed them in different places, sizes and speeds in order to create a three-dimensional movement effect.
 
-![image](https://user-images.githubusercontent.com/57855070/99517716-5d2e1100-2998-11eb-8190-a36b5801e636.png)
+**Code reference:** <br />
+> * https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/1-movers/ScrollBG.cs <br />
 
-https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/1-movers/ScrollBG.cs
+![image](https://user-images.githubusercontent.com/57855070/99517716-5d2e1100-2998-11eb-8190-a36b5801e636.png)
 
 #### Third section:
 
