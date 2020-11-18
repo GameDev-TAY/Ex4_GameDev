@@ -113,8 +113,14 @@ We created three lanes that simulated the road, and we created a spawner for eac
 
 ###### Note the code of this section in a separate repository.
 
+You can play the game here:
+
+https://gamedev-tay.itch.io/ju
+
 Code reference:
 
 https://github.com/GameDev-TAY/JumperFrog
+
+![image](https://user-images.githubusercontent.com/57855070/99500757-74aecf00-2983-11eb-9c3d-5bbb5a1d6ab1.png)
 
 
