@@ -62,6 +62,7 @@ The red arrow indicates the heart:
 4.Our original change was to create enemies of a different kind from the enemies that exist now, these enemies are chasing our player and trying to dismantle him. Each touch on the enemy lowers him one hit point.
 
 Code change reference:
+
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Enemies/EnemyChaser.prefab
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/1-movers/Chaser.cs
 
@@ -76,6 +77,7 @@ We added walls in a random position and at a random time on the screen so that t
 In order for the player movement to really be like in the real world we defined the rigid body component as dynamic and for the collisions to happen correctly all the triggers in the Collider component were activated in the other objects, the trigger in the player in the Collider component was not enable.
 
 Code change reference:
+
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/Boundaries/SpawnRandomWalls.cs
 
 The red arrow indicates the wall:
@@ -89,21 +91,29 @@ Therefore, in order for the enemies and lasers to be destroyed after they leave 
 The reason we added extra to the range is because we wanted the Spawning that are out of camera range to be able to put the objects in the camera boundaries without being destroyed.
 But on the other hand we wanted that when objects come out of the cemera limit will be destroyed.
 To illustrate if the spawns are in the area of the black square we caused objects to be destroyed in the blue line.
+
 Code reference:
+
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/1-movers/Mover.cs
 
 ![image](https://user-images.githubusercontent.com/57855070/99498891-c7d35280-2980-11eb-855c-8162a0afae45.png)
 
 3.Round World - When the player reaches one side of the world, he appears on the other side.
 We created this effect by exiting from one side and back from the other side in the same position only on the opposite side.
+
 Code reference:
+
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/Boundaries/ScreenWrap.cs
 
 #### Third section:
 
 We created a game where a frog has to cross the road without getting hit by cars.
 We created three lanes that simulated the road, and we created a spawner for each lane that schedules the object that represents the cars at some random time. We built a code that moves the cars in a continuous movement from right to left (or vice versa) and the player according to the input from the arrow keys. We used a trigger to check if the player was run over on the way, and another trigger to check if the player reached the other side successfully.
+
+###### Note the code of this section in a separate repository.
+
 Code reference:
+
 https://github.com/GameDev-TAY/JumperFrog
 
 
