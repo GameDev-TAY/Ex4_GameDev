@@ -16,9 +16,10 @@ Before we start detailing we wanted to show you what the game looks like:
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/57855070/99536778-75f7f000-29b3-11eb-81f6-76eb76951362.gif)
 
 The changes made are:
+
 1.The shield is not on the screen at first, but occasionally appears at a random point. When the player collides with the shield, a circle is added around the player's spaceship. The color of the circle weakens from second to second until it disappears after 5 seconds.
 
-Code reference:
+**Code reference:**
 
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Bonuses/Shield.prefab
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Spawners/ShieldSpawner.prefab
@@ -50,7 +51,7 @@ This how the spaceship looks like after it has collected the shield:
 2.We added a cannon that occasionally appears on the screen, at a random point. As the player collects the cannon, he can fire a larger and more powerful laser, for a few seconds. The cannon is disposable like the shield - disappears after the player collects it.
 The difference between a regular laser and a powerful laser is that the stronger laser is bigger faster and is not destroyed after one hit on the enemy, meaning it can hit more than one enemy after being shot.
 
-Code reference:
+**Code reference:**
 
 Same as the Shield
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/2-spawners/TimedSpawnerRandomBonus.cs
@@ -78,7 +79,7 @@ This how the Laser looks like after it the spaceship has collected the cannon:
 3.The player's spaceship is not destroyed immediately when he collides with the enemy, but he has 3 "hit points" at the beginning of the game.
 In addition we have added that it will be possible to collect "life" during the game by collecting hearts. It is important to note that if a player has 3 "hit points" then he will not be able to collect the hearts.
 
-Code change reference:
+**Code reference:**
 
 Same as the Shield
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/2-spawners/TimedSpawnerRandomBonus.cs
@@ -104,7 +105,7 @@ The red arrow indicates the heart:
 
 4.Our original change was to create enemies of a different kind from the enemies that exist now, these enemies are chasing our player and trying to dismantle him. Each touch on the enemy lowers is life him one hit point.
 
-Code change reference:
+**Code reference:**
 
 The script is in the object chaserץ
 The chaser's script is responsible for aiming the enemy's face to direct the player at a constant and changeable rotational speed that is obtained as a parameter.
@@ -125,7 +126,7 @@ In this section we were asked to add 3 different borderies to our game.
 We added walls in a random position and at a random time on the screen so that the player can not go through them just like a regular wall.
 In order for the player movement to really be like in the real world we defined the rigid body component as dynamic and for the collisions to happen correctly all the triggers in the Collider component were activated in the other objects, the trigger in the player in the Collider component was not enable.
 
-Code change reference:
+**Code reference:**
 
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/Boundaries/SpawnRandomWalls.cs
 
@@ -141,7 +142,7 @@ The reason we added extra to the range is because we wanted the Spawning that ar
 But on the other hand we wanted that when objects come out of the cemera limit will be destroyed.
 To illustrate if the spawns are in the area of the black square we caused objects to be destroyed in the blue line.
 
-Code reference:
+**Code reference:**
 
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/1-movers/Mover.cs
 
@@ -152,7 +153,7 @@ We created this effect by exiting from one side and back from the other side in 
 In order for the animation to work in a subdivision manner we moved the spaceship only when it was completely out of the camera realm.
 We did this by accepting the boundaries of the spaceship and adding them to the position calculation.
 
-Code reference:
+**Code reference:**
 
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/Boundaries/ScreenWrap.cs
 
@@ -173,7 +174,7 @@ We created a game where a frog has to cross the road without getting hit by cars
 We created three lanes that simulated the road, and we created a spawner for each lane that schedules the object that represents the cars at some random time. We built a code that moves the cars in a continuous movement from right to left (or vice versa) and the player according to the input from the arrow keys. We used a trigger to check if the player was run over on the way, and another trigger to check if the player reached the other side successfully.
 from more information read the readme of the project.
 
-Code reference:
+**Code reference:**
 
 https://github.com/GameDev-TAY/JumperFrog
 
