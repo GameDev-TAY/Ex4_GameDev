@@ -18,7 +18,21 @@ Code reference:
 
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Bonuses/Shield.prefab
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Spawners/ShieldSpawner.prefab
+
+The TimedSpawnerRandomBonus script is accepted as parameters:
+1. object for spawning 
+2. Time range for spawning
+3. Gets the boundaries from the camera
+And spawns the object at a random time and position on the screen.
+
+https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/2-spawners/TimedSpawnerRandomBonus.cs
+
+The ShieldActivate script is in the player and the role of the script is to detect that the player has collided with a Shield object and then add the element of the fading circle over time
+
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/3-collisions/ShieldActivate.cs
+
+In the ShieldThePlayer script the trigger of the colliders is activated as soon as it recognizes that the player has touched it then it activates the shield
+
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/3-collisions/ShieldThePlayer.cs
 
 The red arrow indicates the shield:
@@ -30,12 +44,22 @@ This how the spaceship looks like after it has collected the shield:
 ![image](https://user-images.githubusercontent.com/57855070/99460739-12c97780-2939-11eb-803e-2326f6769477.png)
 
 2.We added a cannon that occasionally appears on the screen, at a random point. As the player collects the cannon, he can fire a larger and more powerful laser, for a few seconds. The cannon is disposable like the shield - disappears after the player collects it.
+The difference between a regular laser and a powerful laser is that the stronger laser is bigger faster and is not destroyed after one hit on the enemy, meaning it can hit more than one enemy after being shot.
 
 Code reference:
 
+Same as the Shield
+https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/2-spawners/TimedSpawnerRandomBonus.cs
+
+
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Bonuses/Cannon.prefab
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Spawners/CannonSpawner.prefab
+
+the BigLaserShooter and the LaserShooter is components of the player.
 https://github.com/GameDev-TAY/Ex4_GameDev/tree/main/Assets/Prefabs/Lasers
+
+The CannonThePlayer script is located at the cannon object.
+The role of the script is after an identification is made that the player has collected it and then he neutralizes the regular laser and then activates the more powerful laser(BigLaserShooter) for a set time.
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/2-spawners/BigLaserShooter.cs
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/3-collisions/CannonThePlayer.cs
 
@@ -52,20 +76,40 @@ In addition we have added that it will be possible to collect "life" during the 
 
 Code change reference:
 
-https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Bonuses/Health.prefab
-https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Spawners/HealthSpawner.prefab
+Same as the Shield
+https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/2-spawners/TimedSpawnerRandomBonus.cs
+
+The HealthSystem component is in the player.
+It takes as a parameter the number of lives the player currently has.
+Also the damge function is in it and is responsible for lowering the life of the player and reducing the player.
+And if necessary also its destruction if it is disqualified.
+
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/3-collisions/HealthSystem.cs
+
+Within the Health prefab there is a script called AddHealth whose roll is to add life to the player when the Health type objects recognize connection 
+with the player This script increases the life of the player and increases his character. This only happens when the player's life is less than 3.
+https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Bonuses/Health.prefab
+https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/3-collisions/AddHealth.cs
+
+https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Spawners/HealthSpawner.prefab
+
 
 The red arrow indicates the heart:
 
 ![image](https://user-images.githubusercontent.com/57855070/99462228-e3683a00-293b-11eb-82df-2c43aba38128.png)
 
-4.Our original change was to create enemies of a different kind from the enemies that exist now, these enemies are chasing our player and trying to dismantle him. Each touch on the enemy lowers him one hit point.
+4.Our original change was to create enemies of a different kind from the enemies that exist now, these enemies are chasing our player and trying to dismantle him. Each touch on the enemy lowers is life him one hit point.
 
 Code change reference:
 
+The script is in the object chaserץ
+The chaser's script is responsible for aiming the enemy's face to direct the player at a constant and changeable rotational speed that is obtained as a parameter.
+In addition the role of the script is to move the enemy chasing the player at a movement speed that is accepted as a format.
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Enemies/EnemyChaser.prefab
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/1-movers/Chaser.cs
+
+The enemy is as happy as the other enemies below code:
+https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/2-spawners/TimedSpawnerRandom.cs
 
 The red arrow indicates the new enemies:
 
