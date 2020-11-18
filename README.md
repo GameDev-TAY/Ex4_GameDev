@@ -22,22 +22,17 @@ Before we start detailing we wanted to show you what the game looks like:
 **Code reference:**
 
 > https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Bonuses/Shield.prefab
-> https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Spawners/ShieldSpawner.prefab
+> https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Spawners/ShieldSpawner.prefab <br />
 > The TimedSpawnerRandomBonus script is accepted as parameters:
 > 1. object for spawning 
 > 2. Time range for spawning
 > 3. Gets the boundaries from the camera
-> And spawns the object at a random time and position on the screen.
-
-> https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/2-spawners/TimedSpawnerRandomBonus.cs
-
-> The ShieldActivate script is in the player and the role of the script is to detect that the player has collided with a Shield object and then add the element of the fading > > circle over time
-
-> https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/3-collisions/ShieldActivate.cs
-
-> In the ShieldThePlayer script the trigger of the colliders is activated as soon as it recognizes that the player has touched it then it activates the shield
-
-> https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/3-collisions/ShieldThePlayer.cs
+> And spawns the object at a random time and position on the screen. <br />
+> https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/2-spawners/TimedSpawnerRandomBonus.cs <br />
+> The ShieldActivate script is in the player and the role of the script is to detect that the player has collided with a Shield object and then add the element of the fading  circle over time <br />
+> https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/3-collisions/ShieldActivate.cs <br />
+> In the ShieldThePlayer script the trigger of the colliders is activated as soon as it recognizes that the player has touched it then it activates the shield <br />
+> https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/3-collisions/ShieldThePlayer.cs <br />
 
 The red arrow indicates the shield:
 
