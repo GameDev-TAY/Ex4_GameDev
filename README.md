@@ -3,6 +3,7 @@
 This project was done as part of the "Computer Game Development" course at Ariel University.
 
 You can see the assignment at the following link: 
+
 https://github.com/gamedev-at-ariel/gamedev-5781/blob/master/04-unity-triggers/homework.pdf
 
 #### First section:
