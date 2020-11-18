@@ -13,9 +13,10 @@ We really enjoyed this question so we chose to make 4 changes in the original co
 
 1.The shield is not on the screen at first, but occasionally appears at a random point. When the player collides with the shield, a circle is added around the player's spaceship. The color of the circle weakens from second to second until it disappears after 5 seconds.
 
-Code change reference:
+Code reference:
 
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Bonuses/Shield.prefab
+https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Spawners/ShieldSpawner.prefab
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/3-collisions/ShieldActivate.cs
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/3-collisions/ShieldThePlayer.cs
 
@@ -29,10 +30,12 @@ This how the spaceship looks like after it has collected the shield:
 
 2.We added a cannon that occasionally appears on the screen, at a random point. As the player collects the cannon, he can fire a larger and more powerful laser, for a few seconds. The cannon is disposable like the shield - disappears after the player collects it.
 
-Code change reference:
+Code reference:
 
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Bonuses/Cannon.prefab
+https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Spawners/CannonSpawner.prefab
 https://github.com/GameDev-TAY/Ex4_GameDev/tree/main/Assets/Prefabs/Lasers
+https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/2-spawners/BigLaserShooter.cs
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/3-collisions/CannonThePlayer.cs
 
 The red arrow indicates the cannon:
@@ -49,6 +52,7 @@ In addition we have added that it will be possible to collect "life" during the 
 Code change reference:
 
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Bonuses/Health.prefab
+https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Spawners/HealthSpawner.prefab
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/3-collisions/HealthSystem.cs
 
 The red arrow indicates the heart:
@@ -59,6 +63,7 @@ The red arrow indicates the heart:
 
 Code change reference:
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Prefabs/Enemies/EnemyChaser.prefab
+https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/1-movers/Chaser.cs
 
 The red arrow indicates the new enemies:
 
@@ -68,6 +73,7 @@ The red arrow indicates the new enemies:
 In this section we were asked to add 3 different borderies to our game.
 1. The first border is a flat world with visible borders, such as impassable walls.
 We added walls in a random position and at a random time on the screen so that the player can not go through them just like a regular wall.
+In order for the player movement to really be like in the real world we defined the rigid body component as dynamic and for the collisions to happen correctly all the triggers in the Collider component were activated in the other objects, the trigger in the player in the Collider component was not enable.
 
 Code change reference:
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/Boundaries/SpawnRandomWalls.cs
@@ -78,8 +84,20 @@ The red arrow indicates the wall:
 
 
 2.A flat world with invisible borders means that when the enemies pass the bottom of the screen, they are destroyed and when the laser crosses the top of the screen - it is destroyed.
+To understand our application to this section it is important to remember that the enemies and the laser use the same mover component.
+Therefore, in order for the enemies and lasers to be destroyed after they leave a certain limit, we defined in the mover component that when they reach the camera + extra limits, they will be destroyed.
+The reason we added extra to the range is because we wanted the Spawning that are out of camera range to be able to put the objects in the camera boundaries without being destroyed.
+But on the other hand we wanted that when objects come out of the cemera limit will be destroyed.
+To illustrate if the spawns are in the area of the black square we caused objects to be destroyed in the blue line.
+Code reference:
+https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/1-movers/Mover.cs
+
+![image](https://user-images.githubusercontent.com/57855070/99498891-c7d35280-2980-11eb-855c-8162a0afae45.png)
 
 3.Round World - When the player reaches one side of the world, he appears on the other side.
+We created this effect by exiting from one side and back from the other side in the same position only on the opposite side.
+Code reference:
+https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/Boundaries/ScreenWrap.cs
 
 #### Third section:
 
