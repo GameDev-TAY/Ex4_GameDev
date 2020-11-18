@@ -145,6 +145,8 @@ https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/1-movers/Mov
 
 3.Round World - When the player reaches one side of the world, he appears on the other side.
 We created this effect by exiting from one side and back from the other side in the same position only on the opposite side.
+In order for the animation to work in a subdivision manner we moved the spaceship only when it was completely out of the camera realm.
+We did this by accepting the boundaries of the spaceship and adding them to the position calculation.
 
 Code reference:
 
@@ -153,6 +155,13 @@ https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/Boundaries/S
 You can play the game here:
 
 https://gamedev-tay.itch.io/spaceship
+
+#### background:
+We created a new material that uses a star image whose warp mode is in repeat and then we defined its shader as transparent and then we created a background object whose element is the material and then we added the ScrollBG script whose job is to change the offset of its material. We created two background objects and placed them in different places, sizes and speeds in order to create a three-dimensional movement effect.
+
+![image](https://user-images.githubusercontent.com/57855070/99517716-5d2e1100-2998-11eb-8190-a36b5801e636.png)
+
+https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/1-movers/ScrollBG.cs
 
 #### Third section:
 
