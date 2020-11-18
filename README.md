@@ -106,6 +106,10 @@ Code reference:
 
 https://github.com/GameDev-TAY/Ex4_GameDev/blob/main/Assets/Scripts/Boundaries/ScreenWrap.cs
 
+You can play the game here:
+
+https://gamedev-tay.itch.io/spaceship
+
 #### Third section:
 
 We created a game where a frog has to cross the road without getting hit by cars.
