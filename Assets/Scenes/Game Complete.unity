@@ -233,12 +233,12 @@ PrefabInstance:
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38.3
+      value: -33.4
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.1
+      value: 10.9
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
@@ -350,12 +350,12 @@ PrefabInstance:
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.9
+      value: 28.1
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.6
+      value: 9.9
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
@@ -553,12 +553,12 @@ PrefabInstance:
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.4
+      value: 28.5
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.9
+      value: 14.4
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
@@ -664,12 +664,12 @@ PrefabInstance:
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38
+      value: -32.7
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.8
+      value: 14.6
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
@@ -1201,6 +1201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4756833480714881}
   - component: {fileID: 212522841112678493}
+  - component: {fileID: 1363711266115914}
   - component: {fileID: 95657521628761207}
   - component: {fileID: 1895225570}
   - component: {fileID: 1363711266115916}
@@ -1209,7 +1210,7 @@ GameObject:
   - component: {fileID: 1363711266115911}
   - component: {fileID: 1363711266115913}
   - component: {fileID: 1363711266115912}
-  - component: {fileID: 1363711266115914}
+  - component: {fileID: 1363711266115908}
   - component: {fileID: 1363711266115915}
   m_Layer: 0
   m_Name: PlayerSpaceship
@@ -1218,6 +1219,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1363711266115908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363711266115907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79961f36a4d2a794fa1c1e3a08adb1c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: 3
 --- !u!50 &1363711266115909
 Rigidbody2D:
   serializedVersion: 4
@@ -1295,11 +1309,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 600ffe605b0336d4d9b11dd4917bd774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyToPress: 32
-  prefabToSpawn: {fileID: 2204313089968469206, guid: f8de81ce04d916c43a25b8a51a68c8c3,
-    type: 3}
-  velocityOfSpawnedObject: {x: 0, y: 17, z: 0}
-  scoreField: {fileID: 1811610590}
 --- !u!114 &1363711266115914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1307,12 +1316,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363711266115907}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b12823d9b86b894db1531506cd69061, type: 3}
+  m_Script: {fileID: 11500000, guid: 743b81338e9ec834381cb86014ab3697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 3
+  keyToPress: 32
+  prefabToSpawn: {fileID: 2204313089968469206, guid: f8de81ce04d916c43a25b8a51a68c8c3,
+    type: 3}
+  velocityOfSpawnedObject: {x: 0, y: 15, z: 0}
+  scoreField: {fileID: 1811610590}
 --- !u!114 &1363711266115915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1826,12 +1839,12 @@ PrefabInstance:
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.9
+      value: -3.2
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.9
+      value: 14.6
       objectReference: {fileID: 0}
     - target: {fileID: 8392271928695271261, guid: 76dd5d4eb2061104b9a72b003c24ce25,
         type: 3}
