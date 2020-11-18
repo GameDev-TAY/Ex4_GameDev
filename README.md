@@ -10,8 +10,12 @@ https://github.com/gamedev-at-ariel/gamedev-5781/blob/master/04-unity-triggers/h
 In this section we had to download code from the lesson of spaceship game.
 The link to the code we started from: https://github.com/gamedev-at-ariel
 
-We really enjoyed this question so we chose to make 4 changes in the original code instead of 2. The changes made are:
+We really enjoyed this question so we chose to make 4 changes in the original code instead of 2. 
 
+Before we start detailing we wanted to show you what the game looks like:
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/57855070/99536778-75f7f000-29b3-11eb-81f6-76eb76951362.gif)
+
+The changes made are:
 1.The shield is not on the screen at first, but occasionally appears at a random point. When the player collides with the shield, a circle is added around the player's spaceship. The color of the circle weakens from second to second until it disappears after 5 seconds.
 
 Code reference:
